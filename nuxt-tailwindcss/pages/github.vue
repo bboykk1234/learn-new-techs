@@ -12,7 +12,7 @@
             ></path>
           </svg>
         </a>
-        <div class="relative">
+        <div class="hidden lg:block relative">
           <input
             type="text"
             class="rounded bg-gray-700 placeholder-white w-72 px-3 py-1"
@@ -26,7 +26,7 @@
             </div>
           </div>
         </div>
-        <ul class="ul flex items-center font-semibold space-x-4">
+        <ul class="hidden lg:flex ul items-center font-semibold space-x-4">
           <li><a href="#" class="hover:text-gray-400">Pull Request</a></li>
           <li><a href="#" class="hover:text-gray-400">Issues</a></li>
           <li><a href="#" class="hover:text-gray-400">Marketplace</a></li>
@@ -106,7 +106,9 @@
         </a>
       </div>
     </nav>
-    <div class="repo-stats flex items-center justify-between px-8 py-4">
+    <div
+      class="repo-stats flex flex-col lg:flex-row items-center justify-between px-8 py-4"
+    >
       <div class="flex">
         <svg
           class="w-4 fill-current text-gray-600"
@@ -128,7 +130,7 @@
           </div>
         </div>
       </div>
-      <div class="flex space-x-2 text-xs">
+      <div class="flex space-x-2 text-xs mt-4 lg:mt-0">
         <div class="flex">
           <button
             class="border border-gray-400 rounded rounded-r-none px-3 py-1 flex items-center space-x-1"
@@ -289,10 +291,10 @@
           </span>
         </a>
       </li>
-      <li class="font-semibold">
+      <li class="hidden displa font-semibold">
         <a
           href="#"
-          class="flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in-out duration-150 px-4 pb-3"
+          class="hidden lg:flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in-out duration-150 px-4 pb-3"
         >
           <svg aria-hidden="true" viewBox="0 0 16 16" class="w-4 fill-current">
             <path
@@ -306,7 +308,7 @@
       <li class="font-semibold">
         <a
           href="#"
-          class="flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in-out duration-150 px-4 pb-3"
+          class="hidden lg:flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in-out duration-150 px-4 pb-3"
         >
           <svg aria-hidden="true" viewBox="0 0 16 16" class="w-4 fill-current">
             <path
@@ -320,7 +322,7 @@
       <li class="font-semibold">
         <a
           href="#"
-          class="flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in-out duration-150 px-4 pb-3"
+          class="hidden lg:flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in-out duration-150 px-4 pb-3"
         >
           <svg aria-hidden="true" viewBox="0 0 16 16" class="w-4 fill-current">
             <path
@@ -334,7 +336,7 @@
       <li class="font-semibold">
         <a
           href="#"
-          class="flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in-out duration-150 px-4 pb-3"
+          class="hidden lg:flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in-out duration-150 px-4 pb-3"
         >
           <svg aria-hidden="true" viewBox="0 0 16 16" class="w-4 fill-current">
             <path
@@ -348,8 +350,8 @@
     </ul>
     <!-- end repo-nav -->
 
-    <div class="container mx-auto my-8 px-4 flex">
-      <div class="file-explorer-container w-3/4 mr-8">
+    <div class="container mx-auto my-8 px-4 flex flex-col lg:flex-row">
+      <div class="file-explorer-container w-full lg:w-3/4 lg:mr-8">
         <div class="branch-nav flex items-center justify-between">
           <div class="flex items-center space-x-3">
             <button
@@ -381,7 +383,10 @@
                 />
               </svg>
             </button>
-            <a href="#" class="flex items-center space-x-1 group">
+            <a
+              href="#"
+              class="hidden lg:flex items-center space-x-2 space-x-1 group"
+            >
               <svg
                 aria-hidden="true"
                 viewBox="0 0 16 16"
@@ -392,12 +397,12 @@
                   d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"
                 ></path>
               </svg>
-              <span class="group-hover:text-blue-600">
+              <span class="group-hover:text-blue-600 hidden lg:block">
                 <span class="font-semibold">34 </span>
                 <span class="text-gray-600">branches</span>
               </span>
             </a>
-            <a href="#" class="flex items-center space-x-1 group">
+            <a href="#" class="hidden lg:flex items-center space-x-1 group">
               <svg
                 aria-hidden="true"
                 viewBox="0 0 16 16"
@@ -414,7 +419,7 @@
               </span>
             </a>
           </div>
-          <div class="flex items-center space-x-2">
+          <div class="items-center space-x-2 hidden lg:flex">
             <button
               class="border border-gray-400 px-4 py-1 rounded-md flex items-center space-x-2 hover:bg-gray-200"
             >
@@ -501,7 +506,7 @@
             </a>
             <a
               href="#"
-              class="font-mono text-xs text-gray-600 hover:underline hover:text-blue-500 ml-2"
+              class="hidden lg:inline font-mono text-xs text-gray-600 hover:underline hover:text-blue-500 ml-2"
             >
               da070bd
             </a>
@@ -523,9 +528,10 @@
                   d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"
                 ></path>
               </svg>
-              <span class="ml-1"
-                ><span class="font-semibold">3,040</span> commits</span
-              >
+              <span class="ml-1">
+                <span class="font-semibold"> 3,040 </span>
+                <span class="hidden lg:inline"> commits </span>
+              </span>
             </a>
           </div>
         </div>
@@ -549,8 +555,8 @@
                 <span> .github </span>
               </div>
             </div>
-            <div class="w-6/12">Update issues template</div>
-            <div class="w-2/12 text-right">11 days ago</div>
+            <div class="hidden lg:block w-6/12">Update issues template</div>
+            <div class="w-4/12 lg:w-2/12 text-right">11 days ago</div>
           </div>
           <div class="flex justify-between px-4 py-2 hover:bg-gray-200">
             <div class="w-4/12">
@@ -569,7 +575,7 @@
                 <span> __tests__ </span>
               </div>
             </div>
-            <div class="w-6/12">Remove stale test</div>
+            <div class="hidden lg:block w-6/12">Remove stale test</div>
             <div class="w-2/12 text-right">4 days ago</div>
           </div>
           <div class="flex justify-between px-4 py-2 hover:bg-gray-200">
@@ -589,7 +595,7 @@
                 <span> dist </span>
               </div>
             </div>
-            <div class="w-6/12">
+            <div class="hidden lg:block w-6/12">
               Add empty .npmignore so dist files are distributed with releases
             </div>
             <div class="w-2/12 text-right">3 years ago</div>
@@ -611,8 +617,10 @@
                 <span> jest </span>
               </div>
             </div>
-            <div class="w-6/12">Use `process.env.JEST_WORKER_ID`</div>
-            <div class="w-2/12 text-right">15 months ago</div>
+            <div class="hidden lg:block w-6/12">
+              Use `process.env.JEST_WORKER_ID`
+            </div>
+            <div class="4/12 lg:w-2/12 text-right">15 months ago</div>
           </div>
           <div class="flex justify-between px-4 py-2 hover:bg-gray-200">
             <div class="w-4/12">
@@ -631,7 +639,9 @@
                 <span> scripts </span>
               </div>
             </div>
-            <div class="w-6/12">Prevent source maps from being generated</div>
+            <div class="hidden lg:block w-6/12">
+              Prevent source maps from being generated
+            </div>
             <div class="w-2/12 text-right">21 days ago</div>
           </div>
           <div class="flex justify-between px-4 py-2 hover:bg-gray-200">
@@ -651,7 +661,7 @@
                 <span> src </span>
               </div>
             </div>
-            <div class="w-6/12">
+            <div class="hidden lg:block w-6/12">
               Only wrap with variants for container by default
             </div>
             <div class="w-2/12 text-right">4 days ago</div>
@@ -673,7 +683,7 @@
                 <span> stubs </span>
               </div>
             </div>
-            <div class="w-6/12">
+            <div class="hidden lg:block w-6/12">
               Generate responsive variants for container by default
             </div>
             <div class="w-2/12 text-right">4 days ago</div>
@@ -695,7 +705,9 @@
                 <span> .editorconfig </span>
               </div>
             </div>
-            <div class="w-6/12">Convert new stuff to use ES6 modules</div>
+            <div class="hidden lg:block w-6/12">
+              Convert new stuff to use ES6 modules
+            </div>
             <div class="w-2/12 text-right">3 years ago</div>
           </div>
           <div class="flex justify-between px-4 py-2 hover:bg-gray-200">
@@ -715,7 +727,9 @@
                 <span> .editorconfig </span>
               </div>
             </div>
-            <div class="w-6/12">Convert new stuff to use ES6 modules</div>
+            <div class="hidden lg:block w-6/12">
+              Convert new stuff to use ES6 modules
+            </div>
             <div class="w-2/12 text-right">3 years ago</div>
           </div>
           <div class="flex justify-between px-4 py-2 hover:bg-gray-200">
@@ -735,7 +749,7 @@
                 <span> .eslintignore </span>
               </div>
             </div>
-            <div class="w-6/12">Updated CLI init command</div>
+            <div class="hidden lg:block w-6/12">Updated CLI init command</div>
             <div class="w-2/12 text-right">16 months ago</div>
           </div>
           <div class="flex justify-between px-4 py-2 hover:bg-gray-200">
@@ -755,7 +769,9 @@
                 <span> .eslintrc.json </span>
               </div>
             </div>
-            <div class="w-6/12">Disable lint rule for TODO comments</div>
+            <div class="hidden lg:blockw-6/12">
+              Disable lint rule for TODO comments
+            </div>
             <div class="w-2/12 text-right">3 months ago</div>
           </div>
           <div class="flex justify-between px-4 py-2 hover:bg-gray-200">
@@ -775,7 +791,7 @@
                 <span> plugin.js </span>
               </div>
             </div>
-            <div class="w-6/12 truncate">
+            <div class="hidden lg:block w-6/12 truncate">
               Add new `plugin` and `plugin.withOptions` functions for creating
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem facilis placeat amet rerum voluptatem fugiat error
@@ -801,7 +817,7 @@
                 <span> README.md </span>
               </div>
             </div>
-            <div class="w-6/12">Add alt attribute to logo</div>
+            <div class="hidden lg:block w-6/12">Add alt attribute to logo</div>
             <div class="w-2/12 text-right">2 months ago</div>
           </div>
           <div class="flex justify-between px-4 py-2 hover:bg-gray-200">
@@ -821,7 +837,7 @@
                 <span> tailwind.css </span>
               </div>
             </div>
-            <div class="w-6/12">
+            <div class="hidden lg:block w-6/12">
               Undo accidental changes to CDN build process
             </div>
             <div class="w-2/12 text-right">7 months ago</div>
@@ -843,7 +859,9 @@
                 <span> utilities.css </span>
               </div>
             </div>
-            <div class="w-6/12">Move CSS files to root for easier imports</div>
+            <div class="hidden lg:block w-6/12">
+              Move CSS files to root for easier imports
+            </div>
             <div class="w-2/12 text-right">2 years ago</div>
           </div>
         </div>
@@ -855,7 +873,7 @@
       </div>
       <!-- end file-explorer-container -->
 
-      <div class="sidebar w-1/4">
+      <div class="sidebar w-full lg:w-1/4 mt-4 lg:mt-0">
         <div class="about">
           <h4 class="text-base font-semibold">About</h4>
           <p class="text-base mt-4">
@@ -1184,9 +1202,9 @@
     </div>
 
     <footer
-      class="container mx-auto border-t border-gray-400 flex text-xs py-10 items-center justify-between"
+      class="container mx-auto border-t border-gray-400 flex flex-col lg:flex-row text-xs py-10 items-center justify-between"
     >
-      <ul class="flex items-center space-x-12">
+      <ul class="flex items-center space-x-6 lg:space-x-12">
         <li>&copy; 2021 GitHub, Inc.</li>
         <li><a href="#" class="text-blue-600 hover:underline">Terms</a></li>
         <li><a href="#" class="text-blue-600 hover:underline">Privacy</a></li>
@@ -1194,7 +1212,7 @@
         <li><a href="#" class="text-blue-600 hover:underline">Status</a></li>
         <li><a href="#" class="text-blue-600 hover:underline">Docs</a></li>
       </ul>
-      <div class="mx-16">
+      <div class="mx-16 hidden lg:block">
         <svg
           height="24"
           class="w-5 fill-current text-gray-400"
@@ -1207,7 +1225,7 @@
           ></path>
         </svg>
       </div>
-      <ul class="flex items-center space-x-12">
+      <ul class="flex items-center space-x-12 mt-4 lg:mt-0">
         <li>
           <a href="#" class="text-blue-600 hover:underline">Contact GitHub</a>
         </li>
