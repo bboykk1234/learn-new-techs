@@ -850,12 +850,7 @@
 
         <div class="desc-container border rounded-md border-gray-300 mt-5 p-5">
           <h4 class="font-semibold">README.md</h4>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,
-            numquam! Qui dolores itaque eaque quo enim commodi, aliquam et
-            magnam vitae corrupti, voluptatibus repellendus! Alias tempora ullam
-            excepturi consequuntur. Repellat?
-          </div>
+          <div class="prose max-w-none" v-html="readme"></div>
         </div>
       </div>
       <!-- end file-explorer-container -->
@@ -1225,3 +1220,15 @@
     </footer>
   </div>
 </template>
+
+<script>
+import readme from './README-tailwindcss.md'
+
+export default {
+  computed: {
+    readme() {
+      return readme
+    },
+  },
+}
+</script>
